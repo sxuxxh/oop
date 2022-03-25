@@ -59,11 +59,13 @@ public class Lion extends Animal{
     }
 
     // Method:
+    @Override
     public void makeAMove() {
         System.out.println(this.getName()+" is pouncing.");
     }
 
     // Method:
+    @Override
     public void makeASound() {
         System.out.println(this.getName()+" is roaring.");
     }

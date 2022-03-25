@@ -45,11 +45,13 @@ public class Bird extends Animal{
     }
 
     // Method:
+    @Override
     public void makeAMove() {
         System.out.println(this.getName()+" is flying.");
     }
 
     // Method:
+    @Override
     public void makeASound() {
         System.out.println(this.getName()+" is chirping.");
     }

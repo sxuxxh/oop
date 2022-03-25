@@ -59,10 +59,13 @@ public class Dolphin extends Animal{
     }
 
     // Method:
+    @Override
     public void makeAMove() {
         System.out.println(this.getName()+" is swimming.");
     }
 
+    // Method:
+    @Override
     public void makeASound() {
         System.out.println(this.getName()+" is humming.");
     }
