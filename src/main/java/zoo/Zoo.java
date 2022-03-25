@@ -1,3 +1,7 @@
+/*
+    Program to practice OOP concepts - hasA relationship
+ */
+
 package zoo;
 
 import java.util.ArrayList;
@@ -51,5 +55,36 @@ public class Zoo {
                 ", address='" + address + '\'' +
                 ", animals=" + animals +
                 '}';
+    }
+
+    // List animals
+    public void listAnimals(ArrayList<Animal> animals) {
+        for (Animal animal: animals
+             ) {
+            if (animal instanceof Bird) {
+                System.out.println("Bird: ");
+                System.out.println("Name: "+((Bird) animal).getName());
+                System.out.println("Species: "+ animal.getSpecies());
+                System.out.println("Age: "+ String.valueOf(animal.getAge()));
+                System.out.println("BeakColor: "+((Bird) animal).getBeakColor());
+                System.out.println("===================");
+            }
+            if (animal instanceof Dolphin) {
+                System.out.println("Dolphin: ");
+                System.out.println("Name: "+((Dolphin) animal).getName());
+                System.out.println("Species: "+ animal.getSpecies());
+                System.out.println("Age: "+ String.valueOf(animal.getAge()));
+                System.out.println("SkinColor: "+((Dolphin) animal).getskinColor());
+                System.out.println("===================");
+            }
+            if (animal instanceof Lion) {
+                System.out.println("Lion: ");
+                System.out.println("Name: "+((Lion) animal).getName());
+                System.out.println("Species: "+ animal.getSpecies());
+                System.out.println("Age: "+ String.valueOf(animal.getAge()));
+                System.out.println("ManeColor: "+((Lion) animal).getManeColor());
+                System.out.println("===================");
+            }
+        }
     }
 }

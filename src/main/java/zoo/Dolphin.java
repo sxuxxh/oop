@@ -1,3 +1,7 @@
+/*
+    Program to practice OOP concepts - isA relationship
+ */
+
 package zoo;
 
 public class Dolphin extends Animal{
@@ -51,11 +55,10 @@ public class Dolphin extends Animal{
     // ToString
     @Override
     public String toString() {
-        return "Dolphin{" +
-                "name='" + name + '\'' +
-                ", skinColor='" + skinColor + '\'' +
-                ", isMarine=" + isMarine +
-                '}';
+        return "Dolphin: \n" +
+                "name: " + name + '\n' +
+                "skinColor: " + skinColor + '\n' +
+                "isMarine: " + isMarine;
     }
 
     // Method:
@@ -68,5 +71,11 @@ public class Dolphin extends Animal{
     @Override
     public void makeASound() {
         System.out.println(this.getName()+" is humming.");
+    }
+
+    // Method:
+    @Override
+    public Dolphin giveBirth() {
+        return new Dolphin();
     }
 }

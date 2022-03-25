@@ -1,3 +1,7 @@
+/*
+    Program to practice OOP concepts - isA relationship
+ */
+
 package zoo;
 
 public class Lion extends Animal{
@@ -51,11 +55,10 @@ public class Lion extends Animal{
     // ToString
     @Override
     public String toString() {
-        return "Lion{" +
-                "name='" +  name + '\'' +
-                ", maneColor='" + maneColor + '\'' +
-                ", isWild=" + isWild +
-                '}';
+        return "Lion: \n" +
+                "name: " +  name + '\n' +
+                "maneColor: " + maneColor + '\n' +
+                "isWild: " + isWild;
     }
 
     // Method:

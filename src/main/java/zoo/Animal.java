@@ -1,6 +1,10 @@
+/*
+    Program to practice OOP concepts - isA relationship
+ */
+
 package zoo;
 
-public class Animal implements ImplementationGuide{
+public class Animal implements AnimalImplementationGuide{
     // Fields
     private String species;
     private String gender;
@@ -44,21 +48,20 @@ public class Animal implements ImplementationGuide{
     // ToString
     @Override
     public String toString() {
-        return "Animal{" +
-                "species='" + species + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age=" + age +
-                '}';
+        return "Animal: \n" +
+                "species: " + species + '\n' +
+                "gender: " + gender + '\n' +
+                "age: " + age;
     }
 
     // Method:
     public void makeAMove() {
-        System.out.println("Animal is making a move.");
+        System.out.println("Animals are making moves.");
     }
 
     // Method:
     public void makeASound() {
-        System.out.println("Animal is making a sound.");
+        System.out.println("Animals are making sounds.");
     }
 
     // Method:
