@@ -57,10 +57,11 @@ public class Zoo {
                 '}';
     }
 
-    // List animals
+    // Method: List animals
     public void listAnimals(ArrayList<Animal> animals) {
         for (Animal animal: animals
              ) {
+            System.out.println("\u001B[0m");
             if (animal instanceof Bird) {
                 System.out.println("Bird: ");
                 System.out.println("Name: "+((Bird) animal).getName());

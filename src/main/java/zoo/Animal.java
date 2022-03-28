@@ -54,17 +54,17 @@ public class Animal implements AnimalImplementationGuide{
                 "age: " + age;
     }
 
-    // Method:
+    // Method: animal makeAMove() implementation
     public void makeAMove() {
         System.out.println("Animals are making moves.");
     }
 
-    // Method:
+    // Method: animal makeASound() implementation
     public void makeASound() {
         System.out.println("Animals are making sounds.");
     }
 
-    // Method:
+    // Method: check isLand animal
     public static Boolean isLand(String species) {
         Boolean ret = false;
         if (species.equals("land")) {
